@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact — Your Name</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<meta name="theme-color" content="#111219">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header container">
+    <a class="brand" href="index.html">Your Name</a>
+    <nav aria-label="Primary">
+     <a href="index.html" aria-current="page"> 🏠HOME</a>
+      <a href="resume.html"> 📝RESUME</a>
+      <a href="biodata.html"> 📘BIO-DATA</a>
+      <a href="contact.html" aria-current="page"> ☎️CONTACT</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1> ☎️ Contact</h1>
+    <section class="card">
+      <form class="form" id="contactForm" novalidate>
+        <div class="field">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" required />
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required />
+        </div>
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" required></textarea>
+        </div>
+        <button class="btn" type="submit">Send</button>
+        <p class="muted" id="formStatus" role="status"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <small>© <span id="year"></span> KAVYA HUGGI</small>
+     <a href="mailto:kavyashankarhuggi@gmail.com" class="email-link">
+  <img src="icons8-gmail-48.png" alt="Gmail Icon">
+  kavyashankarhuggi@gmail.com
+</a>
+
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
